@@ -30,7 +30,7 @@
                             '<button id="btnResult" class="btn btn-primary d-block mt-4 mx-auto">'+
                                 'Resolver'+
                             '</button>'+
-                            '<div id="solve" class="mt-4"></div>';
+                            '<div id="solve" class="mt-4 text-center"></div>';
 
             document.querySelector('#app').innerHTML = template;
             document.querySelector("#btnResult").addEventListener("click",() => {
@@ -53,9 +53,10 @@
                         }
                     }
                 }
-                template = '<p class="text-center h2 text-success" style="word-break: break-word">'+
+                template = '<p class="h2 text-success" style="word-break: break-word">'+
                                 '['+solvearr.toString()+']'+
-                            '</p>';
+                            '</p>'+
+                            '<a class="mt-4" href="https://github.com/soyaaronhf/algoritmia1">Ver código</a>';
                 document.querySelector('#solve').innerHTML = template;
             });
         });
